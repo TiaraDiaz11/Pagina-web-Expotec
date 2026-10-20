@@ -1,49 +1,152 @@
-.titulo{
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f4f6fb;
+    color: #202638;
+    line-height: 1.6;
+}
+
+.box-Background {
+    background: linear-gradient(135deg, #101b40, #172e68);
+    padding: 2px 25px;
     text-align: center;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border: none;
+    border-bottom: 5px solid #d92535;
+}
+
+.logo {
+    width: 170px;
+    height: 170px;
+    object-fit: contain;
+    border-radius: 50%;
+    padding: 8px;
+    margin-bottom: 15px;
+}
+
+.titulo {
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-weight: 900;
+    letter-spacing: 4px;
     color: white;
-    width: 30px;
-    height: 30px;
+    width: auto;
+    height: auto;
+    text-align: center;
+    text-transform: uppercase;
 }
 
-.minibio{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.minibio {
+    max-width: 850px;
+    margin: 35px auto;
+    padding: 0 25px;
     text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #303b55;
 }
 
-.proyectos{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-align: center;
-    display: inline-block;
-    transition: transform 0.3s ease;
+.box-Background + div.box-Background {
+    margin-top: 25px;
 }
 
-.proyecto{
-    color: black;
-    -webkit-text-stroke: 1px #f70d0d;
-    text-align: center;
+.h2 {
+    color: white;
+    font-size: 1.8rem;
+    margin-bottom: 12px;
 }
+
+.h3 {
+    color: #e8edff;
+    font-size: 1.05rem;
+    font-weight: 400;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.proyectos {
+    text-align: center;
+    display: block;
+    width: fit-content;
+    margin: 45px auto 10px;
+    font-size: 2.2rem;
+    color: #172e68;
+    letter-spacing: 3px;
+    border-bottom: 4px solid #d92535;
+    padding-bottom: 8px;
+}
+
+.proyecto {
+    color: #606b80;
+    text-align: center;
+    font-size: 1.05rem;
+    font-weight: 400;
+    padding: 0 20px;
+    margin: 15px 0 30px;
+    -webkit-text-stroke: 0;
+    transition: color 0.3s ease;
+}
+
 .proyecto:hover {
-  transform: scale(1.2); 
-}
-.logo{
-    width: 150px;
-    height: 150px;
+    color: #d92535;
 }
 
-
-.box-Background{
-    background-image: linear-gradient(to bottom, #810c0c, #0d0853);
-    border: 6px solid;
-    border-image: linear-gradient(to bottom, #ff7e5f, #feb47b) 1;
-    padding: 20px;
+body > h2 {
+    max-width: 850px;
+    margin: 15px auto;
+    padding: 22px 25px;
+    background-color: white;
+    color: #172e68;
+    border-left: 5px solid #d92535;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(20, 35, 75, 0.08);
+    font-size: 1.2rem;
+    transition: transform 0.25s ease,
+    box-shadow 0.25s ease;
 }
 
-.h2{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: white;
+body > h2:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(20, 35, 75, 0.13);
 }
-.h3{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: white;
+
+@media (max-width: 600px) {
+    .box-Background {
+        padding: 30px 18px;
+    }
+    
+    .logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .titulo {
+        letter-spacing: 3px;
+    }
+
+    .minibio {
+        font-size: 1rem;
+    }
+
+    .h2 {
+        font-size: 1.5rem;
+    }
+
+    .h3 {
+        font-size: 0.95rem;
+    }
+
+    .proyectos {
+        font-size: 1.8rem;
+    }
+
+    body > h2 {
+        margin: 12px 18px;
+        font-size: 1.05rem;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    color: #172e68;
+    font-size: 1rem;
+    letter-spacing: 1px;
 }
