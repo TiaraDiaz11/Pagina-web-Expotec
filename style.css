@@ -93,7 +93,7 @@ body > h2 {
     margin: 15px auto;
     padding: 22px 25px;
     background-color: white;
-    color: #172e68;
+    color:#101b40;
     border-left: 5px solid #d92535;
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(20, 35, 75, 0.08);
@@ -111,7 +111,7 @@ body > h2:hover {
     .box-Background {
         padding: 30px 18px;
     }
-    
+
     .logo {
         width: 100px;
         height: 100px;
@@ -141,12 +141,80 @@ body > h2:hover {
         margin: 12px 18px;
         font-size: 1.05rem;
     }
+
+        .fecha-expotec {
+        margin: 20px 15px;
+        padding: 18px;
+        gap: 12px;
+    }
+
+    .icono-calendario {
+        font-size: 40px;
+    }
+
+    .info-fecha h2 {
+        font-size: 1.2rem;
+    }
+
+    .fecha {
+        font-size: 1rem;
+    }
+
+    .nombre-escuela {
+        font-size: 0.85rem;
+    }
+
 }
 
 footer {
     text-align: center;
     padding: 20px 0;
-    color: #172e68;
+    color: #101b40;
     font-size: 1rem;
     letter-spacing: 1px;
+}
+
+.fecha-expotec {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+    max-width: 750px;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 16px;
+
+}
+
+.icono-calendario {
+    font-size: 40px;
+    flex-shrink: 0;
+}
+
+.info-fecha {
+    text-align: left;
+}
+
+.info-fecha h2 {
+    color: #101b40;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.fecha {
+    color: #d92535;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.escuela {
+    color: #101b40;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.nombre-escuela {
+    color: #101b40;
+    font-size: 0.95rem;
 }
